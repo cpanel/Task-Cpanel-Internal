@@ -1,4 +1,4 @@
-# Copyright (c) 2012, cPanel, Inc.
+# Copyright (c) 2015, cPanel, Inc.
 # All rights reserved.
 # http://cpanel.net
 #
@@ -79,14 +79,6 @@ access to Wietse Venema's TCP Wrappers library
 =cut
 
 use Authen::Libwrap;
-
-=item L<B::C|B::C>
-
-Perl compiler's C backend
-
-=cut
-
-use B::C;
 
 =item L<B::Flags|B::Flags>
 
@@ -1055,6 +1047,44 @@ Perl extension for creating utilities that work with cpanelsync aware directorie
 =cut
 
 use cPanel::SyncUtil;
+
+=item L<cPanel::SyncUtil|cPanel::SyncUtil>
+
+Used to build cpanelsync files.
+
+=cut
+
+use Config::GitLike;
+
+=item L<Config::GitLike|Config::GitLike>
+
+git-compatible config file parsing.
+
+=cut
+
+use Test::Exit;
+
+=item L<Test::Exit|Test::Exit>
+
+Test that some code calls exit() without terminating testing
+
+=cut
+
+use Test::HexString;
+
+=item L<Test::HexString|Test::HexString>
+
+test binary strings with hex dump diagnostics
+
+=cut
+
+use Test::Output;
+
+=item L<Test::Output|Test::Output>
+
+Utilities to test STDOUT and STDERR messages.
+
+=cut
 
 =back
 
